@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header';
-import Navbar from './components/navigationbar';
+import Navbar from './components/Navigationbar';
 import Content from './components/Profile';
 
 
