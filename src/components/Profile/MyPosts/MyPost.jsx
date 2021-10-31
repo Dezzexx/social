@@ -12,9 +12,8 @@ const MyPost = () => {
                 <textarea></textarea>
             </div>
             <div className={cls.posts}>
-                <Post />
-                <Post />
-                <Post />
+                <Post message='Hello, good bless to you. ' Likes='likes 15' />
+                <Post message='Hi from Canada. ' Likes='likes 20'/>
             </div>
         </div>
     )

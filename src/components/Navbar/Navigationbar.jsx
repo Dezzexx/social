@@ -6,23 +6,23 @@ const Navbar = () => {
     return (
         <navigationbar className={cls.navbar}>
             <div className={cls.item}>
-                <a>Main page</a>
+                <a href= "/Profile"> Main page </a>
             </div>
 
             <div className={cls.item}>
-                <a>feed</a>
+                <a href="/Feeds"> feed</a>
             </div>
 
             <div className={cls.item}>
-                <a>Message</a>
+                <a href="/Dialogs"> Message</a>
             </div>
 
             <div className={cls.item}>
-                <a>Music</a>
+                <a href="/Musics"> Music</a>
             </div>
 
             <div className={cls.item}>
-                <a>Settings</a>
+                <a href="/Settings"> Settings</a>
             </div>
 
         </navigationbar>
