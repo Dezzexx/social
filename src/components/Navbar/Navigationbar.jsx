@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import cls from "./Navigationbar.module.css";
 
 
@@ -6,23 +7,23 @@ const Navbar = () => {
     return (
         <navigationbar className={cls.navbar}>
             <div className={cls.item}>
-                <a href= "/Profile"> Main page </a>
+                <NavLink to="/Profile" activeClassName={cls.activeLink}> Main page </NavLink>
             </div>
 
             <div className={cls.item}>
-                <a href="/Feeds"> feed</a>
+                <NavLink to="/Feeds" activeClassName={cls.activeLink}> feed </NavLink>
             </div>
 
             <div className={cls.item}>
-                <a href="/Dialogs"> Message</a>
+                <NavLink to="/Dialogs" activeClassName={cls.activeLink}> Message</NavLink>
             </div>
 
             <div className={cls.item}>
-                <a href="/Musics"> Music</a>
+                <NavLink to="/Musics" activeClassName={cls.activeLink}> Music</NavLink>
             </div>
 
             <div className={cls.item}>
-                <a href="/Settings"> Settings</a>
+                <NavLink to="/Settings" activeClassName={cls.activeLink}> Settings</NavLink>
             </div>
 
         </navigationbar>

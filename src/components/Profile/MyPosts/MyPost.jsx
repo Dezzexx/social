@@ -5,17 +5,22 @@ import Post from "./Posts/Post"
 const MyPost = () => {
     return (
         <div>
-            <div>
+            <div className={cls.posts}>
                 Mypost
             </div>
             <div>
-                <textarea></textarea>
+                <div>
+                    <textarea></textarea>
+                </div>
+                <div>
+                    <button>Send</button>
+                </div>
             </div>
-            <div className={cls.posts}>
-                <Post message='Hello, good bless to you. ' Likes='likes 15' />
-                <Post message='Hi from Canada. ' Likes='likes 20'/>
+            <div className={cls.BlockPosts}>
+                <Post message='Hello, good bless to you. ' likes='likes 15' />
+                <Post message='Hi from Canada. ' likes='likes 20' />
             </div>
-        </div>
+        </div >
     )
 }
 export default MyPost;
