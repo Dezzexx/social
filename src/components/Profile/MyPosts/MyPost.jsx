@@ -3,6 +3,13 @@ import cls from "./MyPost.module.css";
 import Post from "./Posts/Post"
 
 const MyPost = () => {
+
+    let Posts = [
+        { message: 'Hello, good bless to you', likes: 'like: 15' },
+        { message: 'Hi from Canada', likes: 'like: 20' },
+    ]
+
+    let blockPosts = Posts.map(p => < Post message={p.message} likes={p.likes} />);
     return (
         <div>
             <div className={cls.posts}>
@@ -17,8 +24,7 @@ const MyPost = () => {
                 </div>
             </div>
             <div className={cls.BlockPosts}>
-                <Post message='Hello, good bless to you. ' likes='likes 15' />
-                <Post message='Hi from Canada. ' likes='likes 20' />
+                {blockPosts}
             </div>
         </div >
     )
