@@ -1,0 +1,12 @@
+.dialog   {
+    padding: 5px;
+}
+
+.dialog a  {
+    color:firebrick;
+    text-decoration: none;
+}
+.dialog a.activeLink {
+    text-decoration: none;
+    color:burlywood;
+}
