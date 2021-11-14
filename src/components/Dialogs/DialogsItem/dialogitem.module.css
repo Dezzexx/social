@@ -3,10 +3,10 @@
 }
 
 .dialog a  {
-    color:firebrick;
+    color:#234a56;
     text-decoration: none;
 }
 .dialog a.activeLink {
     text-decoration: none;
-    color:burlywood;
+    color:#417d95;
 }

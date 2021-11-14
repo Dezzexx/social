@@ -1,14 +1,14 @@
 .navbar {
     grid-area: navbar;
-    background-color: peru;
+    background-color: #89b9c5;
     padding: 20px;
   }
   
   .item a{
-    color:firebrick;
+    color:#234a56;
     text-decoration: none;
   }
 
   .item a.activeLink{
-    color:burlywood;
+    color:#dde7dc;
   }

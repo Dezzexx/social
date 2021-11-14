@@ -3,7 +3,7 @@ import cls from "./Header.module.css";
 
 const Header = () => {
     return (<header className={cls.header}>
-        <img src='https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg'></img>
+        <img src='https://st.depositphotos.com/1755257/1283/v/600/depositphotos_12837535-stock-illustration-social-network-background-of-the.jpg'></img>
     </header>
     )
 }

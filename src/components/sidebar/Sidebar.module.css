@@ -1,0 +1,12 @@
+.sidebar {
+    grid-area: sidebar;
+    background-color:#c1dee2;
+    padding: 20px;
+    position:relative;
+  }
+
+.item {
+    position:absolute;
+    bottom:0;
+    padding-bottom: 50px;
+}

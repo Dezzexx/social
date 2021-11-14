@@ -5,15 +5,18 @@
   
 
   grid-template-areas:
-  "header header"
-  "navbar con";
+  "header header header"
+  "navbar con sidebar";
 
-  grid-template-rows: 70px 1fr;
-  grid-template-columns: 2fr 10fr;
-  /* grid-gap: 10px;  */
+  grid-template-rows: 70px 1fr ;
+  grid-template-columns: 2fr 10fr 1fr;
+  /* grid-gap: 5fr; */
 }
 
 .app-wrapper-content {
   grid-area: con;
-  background-color: rgba(219, 131, 24, 0.815);
+  background-color: #c1dee2;
 }
+
+/*цветовая палитра https://color.romanuke.com/tsvetovaya-palitra-3588/ */
+
