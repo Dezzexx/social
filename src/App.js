@@ -9,7 +9,6 @@ import Feeds from './components/Feeds/Feeds';
 import Musics from './components/Musics/Musics';
 import Settings from './components/Settings/Settings';
 import Sidebar from './components/sidebar/Sidebar';
-import Friends from './components/sidebar/Friends/Friends';
 
 
 const App = (props) => {
@@ -18,9 +17,13 @@ const App = (props) => {
       <div className='app-wrapper'>
         <Header />
         <Navbar />
-        <div class='app-wrapper-content'>
-          <Route path='/dialogs' render={() => <Dialogs state={props.state.DialogsPage} />} />
-          <Route path='/Profile' render={() => <Profile state={props.state.ProfilePage} />} />
+        <div className='app-wrapper-content'>
+          <Route path='/dialogs' render={() => <Dialogs
+            state={props.state.DialogsPage} />} />
+          <Route path='/Profile' render={() => <Profile
+            profilePage={props.state.ProfilePage}
+            addPost={props.addPost}
+            updateNewPostText={props.updateNewPostText} />} />
           <Route path='/Feeds' render={() => <Feeds />} />
           <Route path='/Musics' render={() => <Musics />} />
           <Route path='/Settings' render={() => <Settings />} />

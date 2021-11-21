@@ -4,12 +4,15 @@ import Post from "./Posts/Post";
 
 const MyPost = (props) => {
 
-    let blockPosts = props.Posts.map(p => < Post message={p.message} likes={p.likes} />);
-    let postelement = React.createRef();
+    let blockPosts = props.Posts.map(p => < Post message={p.message} likes={'Like: ' + p.likes} />);
+    let postElement = React.createRef();
     let sendpost = () => {
-        let text = postelement.current.value;
-        alert(text);
-    } 
+        props.addPost();
+    }
+    let onPostchange = () => {
+        let text = postElement.current.value;
+        props.updateNewPostText(text);
+    }
     return (
         <div>
             <div className={cls.posts}>
@@ -17,7 +20,8 @@ const MyPost = (props) => {
             </div>
             <div>
                 <div>
-                    <textarea ref={postelement}></textarea>
+                    <textarea onChange={onPostchange} ref={postElement}
+                    value={props.newPostText}/>
                 </div>
                 <div>
                     <button onClick={sendpost}>Send</button>

@@ -5,7 +5,7 @@ import cls from "./Navigationbar.module.css";
 
 const Navbar = () => {
     return (
-        <navigationbar className={cls.navbar}>
+        <div className={cls.navbar}>
             <div className={cls.item}>
                 <NavLink to="/Profile" activeClassName={cls.activeLink}> Main page </NavLink>
             </div>
@@ -25,8 +25,7 @@ const Navbar = () => {
             <div className={cls.item}>
                 <NavLink to="/Settings" activeClassName={cls.activeLink}> Settings</NavLink>
             </div>
-
-        </navigationbar>
+        </div>
     )
 }
 export default Navbar;
