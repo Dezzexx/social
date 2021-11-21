@@ -5,6 +5,11 @@ let state = {
             { id: '2', name: 'Andrey' },
         ],
 
+        MyMessages: [
+            { id: '1', message: 'Хай' },
+            { id: '2', message: 'Ничего)' },
+        ],
+
         Messages: [
             { id: '1', message: 'Привет' },
             { id: '2', message: 'Че делаешь?' },

@@ -1,4 +1,16 @@
 .dialogs    {
     display: grid;
     grid-template-columns: 2fr 10fr;
+    position:relative;
+}
+
+.Mymessages {
+    display: grid;
+	position:absolute; /* добавили */
+	right:0;
+    margin-top:20px;
+}
+
+.messages {
+    display: grid;
 }
